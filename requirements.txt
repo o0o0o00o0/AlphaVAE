@@ -1,0 +1,13 @@
+accelerate>=0.31.0
+diffusers==0.33.1
+transformers==4.51.1
+ftfy
+tensorboard
+Jinja2
+peft>=0.11.1
+sentencepiece
+datasets
+prodigyopt
+deepspeed
+torchao==0.10.0
+trl

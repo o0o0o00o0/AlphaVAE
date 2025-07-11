@@ -1,0 +1,6 @@
+kl_scale: 1e-6
+ref_kl_scale: null
+lpips_scale: 0.5
+gan_start_step: 4000
+naive_mse_loss: false
+blend_prob: 0.3
