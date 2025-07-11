@@ -17,7 +17,8 @@ pip install tokenizers==0.21.1 transformers==4.51.1
 
 Pretrained model checkpoints are available at:
 
-🔗 **[https://huggingface.co/black-forest-labs/FLUX.1-dev](https://huggingface.co/black-forest-labs/FLUX.1-dev)**
+🔗 **[FLUX](https://huggingface.co/black-forest-labs/FLUX.1-dev)**
+🔗 **[AlphaVAE](https://huggingface.co/o0o0o00o0/AlphaVAE/tree/main)**
 
 ```bash
 models/
