@@ -57,12 +57,12 @@ bash train/train_diffusion_lora.sh
 
 ## 🧪 Evaluation
 
-> 📂 Before running evaluation, make sure `data.tar.gz` has been downloaded using **Git LFS** and extracted to the appropriate location:
+> 📂 Before running evaluation, please download the dataset from **[Google Drive](https://drive.google.com/drive/folders/1uj-1sFXeHXb9Moj30YzbSBJZNxniYhaR?usp=sharing)** and extract it to the appropriate location.
 >
 > ```bash
-> git lfs fetch --include="data.tar.gz"
-> git lfs checkout
-> tar -xzvf data.tar.gz
+> # Download manually from the link above
+> # Then extract:
+> tar -xzvf Alpha_test_split.tar.gz
 > ```
 
 To evaluate model performance:
