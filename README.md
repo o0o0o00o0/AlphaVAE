@@ -57,12 +57,10 @@ bash train/train_diffusion_lora.sh
 
 ## 🧪 Evaluation
 
-> 📂 Before running evaluation, please download the dataset from **[Google Drive](https://drive.google.com/drive/folders/1uj-1sFXeHXb9Moj30YzbSBJZNxniYhaR?usp=sharing)** and extract it to the appropriate location.
+> 📂 Before running evaluation, please download the dataset from **[Huggingface](https://huggingface.co/datasets/o0o0o00o0/AlphaTest)**.
 >
 > ```bash
-> # Download manually from the link above
-> # Then extract:
-> tar -xzvf Alpha_test_split.tar.gz
+> tar -xzvf data.tar.gz
 > ```
 
 To evaluate model performance:
