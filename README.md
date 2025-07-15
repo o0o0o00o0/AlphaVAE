@@ -1,4 +1,15 @@
-# AlphaVAE
+# AlphaVAE: Unified End-to-End RGBA Image Reconstruction and Generation with Alpha-Aware Representation Learning
+[![arXiv](https://img.shields.io/badge/arXiv-2503.10522-brightgreen.svg?style=flat-square)](https://arxiv.org/abs/2507.09308)
+[![🤗 Model](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model-blue)](https://huggingface.co/o0o0o00o0/AlphaVAE/tree/main)
+[![🤗 Model](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Data-blue)](https://huggingface.co/datasets/o0o0o00o0/AlphaTest)
+
+---
+
+**This is the official repository for "[AlphaVAE: Unified End-to-End RGBA Image Reconstruction and Generation with Alpha-Aware Representation Learning](https://arxiv.org/abs/2507.09308)".**
+
+![grid](qualitative_t2i.png)
+
+---
 
 ## 📦 Installation
 
@@ -75,3 +86,15 @@ bash validation_pipeline/t2i_eval_pipeline.sh
 bash validation_pipeline/diffusion_generation_and_eval_pipeline.sh
 ```
 
+## Citation
+```bibtex
+@misc{wang2025alphavaeunifiedendtoendrgba,
+      title={AlphaVAE: Unified End-to-End RGBA Image Reconstruction and Generation with Alpha-Aware Representation Learning}, 
+      author={Zile Wang and Hao Yu and Jiabo Zhan and Chun Yuan},
+      year={2025},
+      eprint={2507.09308},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2507.09308}, 
+}
+```
