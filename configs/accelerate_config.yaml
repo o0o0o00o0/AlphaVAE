@@ -5,7 +5,7 @@ num_processes: 8  # should be the same as the number of GPUs
 
 debug: false
 deepspeed_config:
-  deepspeed_config_file: zero1.json
+  deepspeed_config_file: configs/zero1.json
   zero3_init_flag: false
 distributed_type: DEEPSPEED
 downcast_bf16: 'no'

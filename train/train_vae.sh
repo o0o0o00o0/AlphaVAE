@@ -15,10 +15,10 @@ accelerate launch --config_file=./configs/accelerate_config.yaml \
     --train_data_dir ${train_data_dir} \
     --num_eval 8 \
     --output_dir ${VAE_dir} \
-    --train_batch_size 2 \
+    --train_batch_size 1 \
     --num_train_epochs 20 \
     --gan_start_step 4000 \
-    --learning_rate 1.5e-5 \
+    --learning_rate 1e-5 \
     --resolution 1024 \
     --lr_scheduler cosine \
     --lr_warmup_steps 100 \
