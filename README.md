@@ -18,7 +18,7 @@ conda create -n AlphaVAE python=3.10
 conda activate AlphaVAE
 pip install torch==2.6.0 torchvision==0.21.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cu124
 pip install -r requirements.txt
-pip install git+https://github.com/CompVis/taming-transformers.git
+pip install taming-transformers-rom1504 # A portable, easy-to-install packaging of taming-transformers (CompVis)
 #eval
 pip install pyiqa
 pip install tokenizers==0.21.1 transformers==4.51.1
