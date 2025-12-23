@@ -97,4 +97,10 @@ bash validation_pipeline/diffusion_generation_and_eval_pipeline.sh
       primaryClass={cs.CV},
       url={https://arxiv.org/abs/2507.09308}, 
 }
+@article{yu2025omnialpha0,
+  title   = {OmniAlpha: A Sequence-to-Sequence Framework for Unified Multi-Task RGBA Generation},
+  author  = {Hao Yu and Jiabo Zhan and Zile Wang and Jinglin Wang and Huaisong Zhang and Hongyu Li and Xinrui Chen and Yongxian Wei and Chun Yuan},
+  year    = {2025},
+  journal = {arXiv preprint arXiv: 2511.20211}
+}
 ```
