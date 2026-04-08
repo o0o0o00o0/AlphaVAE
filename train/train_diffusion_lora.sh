@@ -5,16 +5,16 @@ echo MASTER_PORT=$MASTER_PORT
 
 export NCCL_IB_DISABLE=1
 
-VAE_dir="/path/to/your/model"
+VAE_dir="/data/raw/zhanjiabo/models/Z-Image/rgba_vae_zimage_v1.1"
 
 # Model Configuration
 MODEL_ARGS=(
-    --pretrained_model_name_or_path "/path/to/your/pretrained_model"
+    --pretrained_model_name_or_path "/data/raw/zhanjiabo/models/Z-Image"
     --pretrained_vae_model ${VAE_dir}
-    --guidance_scale 1
+    --guidance_scale 5.0
 )
 
-output_dir=${VAE_dir}/trained-flux-${TIME_STR}
+output_dir=${VAE_dir}/trained-zimage-${TIME_STR}
 # Output Configuration
 OUTPUT_ARGS=(
     --output_dir "${output_dir}"
@@ -24,7 +24,7 @@ OUTPUT_ARGS=(
 # Data Configuration
 DATA_ARGS=(
     --instance_prompt "RGBA"
-    --dataset_name "/path/to/your/train_dataset"
+    --dataset_name "/data/raw/zhanjiabo/dataset/AlphaVAE"
     --caption_column "caption"
     --image_column "image"
     --resolution 1024
@@ -33,26 +33,26 @@ DATA_ARGS=(
 # Training Configuration
 TRAIN_ARGS=(
     --rank 64
-    --num_train_epochs 20
+    --num_train_epochs 30
     --seed "42"
-    --optimizer "prodigy"
-    --learning_rate 1.
+    --use_8bit_adam
+    --optimizer "adamW"
+    --learning_rate 1e-4
     --lr_scheduler "constant"
-    --lr_warmup_steps 0
-
+    --lr_warmup_steps 100
     --train_batch_size 1
-    --gradient_accumulation_steps 1
+    --gradient_accumulation_steps 4
     --mixed_precision "bf16" 
 )
 
 # Checkpointing Configuration
 CHECKPOINT_ARGS=(
-    --checkpointing_steps 100000
+    --checkpointing_steps 1000
 )
 
 # Validation Configuration
 VALIDATION_ARGS=(
-    --validation_steps 5000
+    --validation_steps 500
     --validation_prompt "Burning firewood"
 )
 

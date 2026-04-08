@@ -1,6 +1,6 @@
 from diffusers import (
     AutoencoderKL,
-    FluxPipeline,
+    ZImagePipeline,
 )
 import argparse
 import torch
@@ -79,9 +79,10 @@ def main(args):
         )
 
     weight_dtype = torch.bfloat16
-    pipeline = FluxPipeline.from_pretrained(
+    pipeline = ZImagePipeline.from_pretrained(
         args.pretrained_model_name_or_path,
         torch_dtype=weight_dtype,
+        low_cpu_mem_usage=False,
         vae=vae,
     )
     # load attention processors
@@ -101,7 +102,12 @@ def main(args):
         for i in range(args.num_images_per_prompt):
             image = pipeline(
                 prompt=prompt,
-                prompt_2=prompt,
+                negative_prompt="",
+                height=1024,
+                width=1024,
+                cfg_normalization=False,
+                num_inference_steps=50,
+                guidance_scale=4,
                 generator=generator,
             ).images[0]
             if args.num_images_per_prompt == 1:

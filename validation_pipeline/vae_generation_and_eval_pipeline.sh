@@ -1,7 +1,7 @@
-model_name=./models/finetune_VAE
+model_name="/data/raw/zhanjiabo/models/Z-Image/rgba_vae_zimage_v1.1/checkpoint-40000/hf"
 output_dataset=./results/validation/VAE_results
 
-dataset_root_dir=./data/VAE_test_data
+dataset_root_dir=/data/raw/zhanjiabo/dataset/data/VAE_test_data
 for test_dir in ${dataset_root_dir}/*; do
     test_dir_name=$(basename ${test_dir})
     echo "test_dir_name: ${test_dir_name}"

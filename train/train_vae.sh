@@ -6,11 +6,11 @@ export NCCL_IB_DISABLE=1
 
 WANDB_MODE=offline \
 setting=vae_main
-VAE_dir="path/to/your/vae_model"
-train_data_dir="/path/to/your/train_datasets"
-pretrained_vae_path="/path/to/your/pretrained/vae"
+VAE_dir="/data/raw/zhanjiabo/models/Z-Image/rgba_vae_zimage_v1.0"
+train_data_dir="/data/raw/zhanjiabo/dataset/AlphaVAE/images"
+pretrained_vae_path="/data/raw/zhanjiabo/models/Z-Image/rgba_vae"
 accelerate launch --config_file=./configs/accelerate_config.yaml \
-    --num_processes=8 --main_process_port=$MASTER_PORT train/train_vae.py \
+    --num_processes=4 --main_process_port=$MASTER_PORT train/train_vae.py \
     --pretrained_path ${pretrained_vae_path} \
     --train_data_dir ${train_data_dir} \
     --num_eval 8 \

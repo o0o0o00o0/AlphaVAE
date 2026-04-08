@@ -16,7 +16,7 @@
 ```bash
 conda create -n AlphaVAE python=3.10
 conda activate AlphaVAE
-pip install torch==2.6.0 torchvision==0.21.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cu124
+pip install torch torchvision torchaudio
 pip install -r requirements.txt
 pip install taming-transformers-rom1504 # A portable, easy-to-install packaging of taming-transformers (CompVis)
 #eval
@@ -59,7 +59,7 @@ Run the following command to start training:
 
 ```bash
 # convert the original VAE to support 4-channel RGBA input
-python models/convert.py --src models/FLUX.1-dev/vae --dst models/FLUX.1-dev/rgba_vae
+BNB_CUDA_VERSION=122 python models/convert.py --src /data/raw/zhanjiabo/models/Z-Image/vae --dst /data/raw/zhanjiabo/models/Z-Image/rgba_vae
 # VAE
 bash train/train_vae.sh
 # Diffusion

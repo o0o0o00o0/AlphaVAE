@@ -1,0 +1,1450 @@
+{
+    "metadata": {
+        "input_root": "/data/raw/zhanjiabo/workspace/AlphaVAE/validation_pipeline/local_blended_eval_data",
+        "output_root": "/data/raw/zhanjiabo/workspace/AlphaVAE/validation_pipeline/local_blended_infer_data",
+        "output_json": "/data/raw/zhanjiabo/workspace/AlphaVAE/results/validation/VAE_results/image_quality_report.json",
+        "device": "cuda"
+    },
+    "results": {
+        "gray": {
+            "overall": {
+                "number": 902,
+                "weight": 1.0,
+                "scores": {
+                    "input_laion_score": 5.1812,
+                    "output_laion_score": 5.1702,
+                    "fid_score": 5.1013,
+                    "average_lpips": 0.0222,
+                    "average_psnr": 40.3637,
+                    "average_ssim": 0.9795
+                }
+            },
+            "subsets": {
+                "resized_validation_rgba": {
+                    "overall": {
+                        "number": 402,
+                        "weight": 0.5,
+                        "scores": {
+                            "input_laion_score": 5.2378,
+                            "output_laion_score": 5.2205,
+                            "fid_score": 2.8165,
+                            "average_lpips": 0.0232,
+                            "average_psnr": 39.6843,
+                            "average_ssim": 0.9761
+                        }
+                    },
+                    "subtypes": {
+                        "images": {
+                            "number": 402,
+                            "weight": 0.5,
+                            "scores": {
+                                "input_laion_score": 5.2378,
+                                "output_laion_score": 5.2205,
+                                "fid_score": 2.8165,
+                                "average_lpips": 0.0232,
+                                "average_psnr": 39.6843,
+                                "average_ssim": 0.9761
+                            }
+                        }
+                    }
+                },
+                "resized_AIM_eval_data": {
+                    "overall": {
+                        "number": 500,
+                        "weight": 0.5,
+                        "scores": {
+                            "input_laion_score": 5.1247,
+                            "output_laion_score": 5.12,
+                            "fid_score": 7.386,
+                            "average_lpips": 0.0213,
+                            "average_psnr": 41.0431,
+                            "average_ssim": 0.9829
+                        }
+                    },
+                    "subtypes": {
+                        "plant": {
+                            "number": 75,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 5.1808,
+                                "output_laion_score": 5.1982,
+                                "fid_score": 7.6538,
+                                "average_lpips": 0.0216,
+                                "average_psnr": 40.8299,
+                                "average_ssim": 0.9848
+                            }
+                        },
+                        "fruit": {
+                            "number": 10,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 5.0471,
+                                "output_laion_score": 5.0791,
+                                "fid_score": 2.5168,
+                                "average_lpips": 0.0105,
+                                "average_psnr": 42.2204,
+                                "average_ssim": 0.9904
+                            }
+                        },
+                        "portrait": {
+                            "number": 100,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 5.1738,
+                                "output_laion_score": 5.1707,
+                                "fid_score": 3.5823,
+                                "average_lpips": 0.0112,
+                                "average_psnr": 43.1153,
+                                "average_ssim": 0.9894
+                            }
+                        },
+                        "toy": {
+                            "number": 36,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 5.0398,
+                                "output_laion_score": 5.0028,
+                                "fid_score": 2.1859,
+                                "average_lpips": 0.0118,
+                                "average_psnr": 42.2927,
+                                "average_ssim": 0.9884
+                            }
+                        },
+                        "furniture": {
+                            "number": 45,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 5.1594,
+                                "output_laion_score": 5.1538,
+                                "fid_score": 4.3602,
+                                "average_lpips": 0.0168,
+                                "average_psnr": 40.4593,
+                                "average_ssim": 0.98
+                            }
+                        },
+                        "animal": {
+                            "number": 200,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 5.4121,
+                                "output_laion_score": 5.3856,
+                                "fid_score": 1.5417,
+                                "average_lpips": 0.0275,
+                                "average_psnr": 37.9965,
+                                "average_ssim": 0.9684
+                            }
+                        },
+                        "transparent": {
+                            "number": 34,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 4.86,
+                                "output_laion_score": 4.8498,
+                                "fid_score": 29.8614,
+                                "average_lpips": 0.0497,
+                                "average_psnr": 40.3873,
+                                "average_ssim": 0.9791
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "black": {
+            "overall": {
+                "number": 902,
+                "weight": 1.0,
+                "scores": {
+                    "input_laion_score": 5.2888,
+                    "output_laion_score": 5.2857,
+                    "fid_score": 5.1585,
+                    "average_lpips": 0.026,
+                    "average_psnr": 38.6042,
+                    "average_ssim": 0.9734
+                }
+            },
+            "subsets": {
+                "resized_validation_rgba": {
+                    "overall": {
+                        "number": 402,
+                        "weight": 0.5,
+                        "scores": {
+                            "input_laion_score": 5.3178,
+                            "output_laion_score": 5.3137,
+                            "fid_score": 2.7685,
+                            "average_lpips": 0.0269,
+                            "average_psnr": 38.3861,
+                            "average_ssim": 0.9722
+                        }
+                    },
+                    "subtypes": {
+                        "images": {
+                            "number": 402,
+                            "weight": 0.5,
+                            "scores": {
+                                "input_laion_score": 5.3178,
+                                "output_laion_score": 5.3137,
+                                "fid_score": 2.7685,
+                                "average_lpips": 0.0269,
+                                "average_psnr": 38.3861,
+                                "average_ssim": 0.9722
+                            }
+                        }
+                    }
+                },
+                "resized_AIM_eval_data": {
+                    "overall": {
+                        "number": 500,
+                        "weight": 0.5,
+                        "scores": {
+                            "input_laion_score": 5.2597,
+                            "output_laion_score": 5.2576,
+                            "fid_score": 7.5486,
+                            "average_lpips": 0.0251,
+                            "average_psnr": 38.8222,
+                            "average_ssim": 0.9745
+                        }
+                    },
+                    "subtypes": {
+                        "plant": {
+                            "number": 75,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 5.3586,
+                                "output_laion_score": 5.3619,
+                                "fid_score": 12.7318,
+                                "average_lpips": 0.0323,
+                                "average_psnr": 38.0567,
+                                "average_ssim": 0.9695
+                            }
+                        },
+                        "fruit": {
+                            "number": 10,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 5.2605,
+                                "output_laion_score": 5.2609,
+                                "fid_score": 2.8425,
+                                "average_lpips": 0.0124,
+                                "average_psnr": 39.288,
+                                "average_ssim": 0.9865
+                            }
+                        },
+                        "portrait": {
+                            "number": 100,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 5.1704,
+                                "output_laion_score": 5.1688,
+                                "fid_score": 3.6511,
+                                "average_lpips": 0.0139,
+                                "average_psnr": 41.5505,
+                                "average_ssim": 0.9865
+                            }
+                        },
+                        "toy": {
+                            "number": 36,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 5.0688,
+                                "output_laion_score": 5.0796,
+                                "fid_score": 3.177,
+                                "average_lpips": 0.0148,
+                                "average_psnr": 40.2684,
+                                "average_ssim": 0.9841
+                            }
+                        },
+                        "furniture": {
+                            "number": 45,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 5.2483,
+                                "output_laion_score": 5.2459,
+                                "fid_score": 4.0636,
+                                "average_lpips": 0.0204,
+                                "average_psnr": 38.1079,
+                                "average_ssim": 0.9766
+                            }
+                        },
+                        "animal": {
+                            "number": 200,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 5.4876,
+                                "output_laion_score": 5.4877,
+                                "fid_score": 1.424,
+                                "average_lpips": 0.0304,
+                                "average_psnr": 37.1057,
+                                "average_ssim": 0.9661
+                            }
+                        },
+                        "transparent": {
+                            "number": 34,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 5.2239,
+                                "output_laion_score": 5.1982,
+                                "fid_score": 24.9502,
+                                "average_lpips": 0.0518,
+                                "average_psnr": 37.378,
+                                "average_ssim": 0.9524
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "white": {
+            "overall": {
+                "number": 902,
+                "weight": 1.0,
+                "scores": {
+                    "input_laion_score": 5.134,
+                    "output_laion_score": 5.1296,
+                    "fid_score": 5.2683,
+                    "average_lpips": 0.025,
+                    "average_psnr": 38.193,
+                    "average_ssim": 0.9768
+                }
+            },
+            "subsets": {
+                "resized_validation_rgba": {
+                    "overall": {
+                        "number": 402,
+                        "weight": 0.5,
+                        "scores": {
+                            "input_laion_score": 5.1783,
+                            "output_laion_score": 5.1618,
+                            "fid_score": 3.4317,
+                            "average_lpips": 0.0259,
+                            "average_psnr": 37.9099,
+                            "average_ssim": 0.9738
+                        }
+                    },
+                    "subtypes": {
+                        "images": {
+                            "number": 402,
+                            "weight": 0.5,
+                            "scores": {
+                                "input_laion_score": 5.1783,
+                                "output_laion_score": 5.1618,
+                                "fid_score": 3.4317,
+                                "average_lpips": 0.0259,
+                                "average_psnr": 37.9099,
+                                "average_ssim": 0.9738
+                            }
+                        }
+                    }
+                },
+                "resized_AIM_eval_data": {
+                    "overall": {
+                        "number": 500,
+                        "weight": 0.5,
+                        "scores": {
+                            "input_laion_score": 5.0897,
+                            "output_laion_score": 5.0974,
+                            "fid_score": 7.1049,
+                            "average_lpips": 0.024,
+                            "average_psnr": 38.4761,
+                            "average_ssim": 0.9798
+                        }
+                    },
+                    "subtypes": {
+                        "plant": {
+                            "number": 75,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 5.1941,
+                                "output_laion_score": 5.1965,
+                                "fid_score": 8.5022,
+                                "average_lpips": 0.0269,
+                                "average_psnr": 37.6018,
+                                "average_ssim": 0.9795
+                            }
+                        },
+                        "fruit": {
+                            "number": 10,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 5.0648,
+                                "output_laion_score": 5.1337,
+                                "fid_score": 3.2858,
+                                "average_lpips": 0.0116,
+                                "average_psnr": 39.5274,
+                                "average_ssim": 0.9895
+                            }
+                        },
+                        "portrait": {
+                            "number": 100,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 5.0707,
+                                "output_laion_score": 5.087,
+                                "fid_score": 3.388,
+                                "average_lpips": 0.0123,
+                                "average_psnr": 41.192,
+                                "average_ssim": 0.9885
+                            }
+                        },
+                        "toy": {
+                            "number": 36,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 4.9282,
+                                "output_laion_score": 4.8983,
+                                "fid_score": 2.8769,
+                                "average_lpips": 0.0143,
+                                "average_psnr": 40.2572,
+                                "average_ssim": 0.9864
+                            }
+                        },
+                        "furniture": {
+                            "number": 45,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 5.0712,
+                                "output_laion_score": 5.1017,
+                                "fid_score": 3.1315,
+                                "average_lpips": 0.0179,
+                                "average_psnr": 37.738,
+                                "average_ssim": 0.98
+                            }
+                        },
+                        "animal": {
+                            "number": 200,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 5.2794,
+                                "output_laion_score": 5.2741,
+                                "fid_score": 1.7212,
+                                "average_lpips": 0.0301,
+                                "average_psnr": 36.9279,
+                                "average_ssim": 0.9668
+                            }
+                        },
+                        "transparent": {
+                            "number": 34,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 5.0197,
+                                "output_laion_score": 4.9902,
+                                "fid_score": 26.8287,
+                                "average_lpips": 0.0546,
+                                "average_psnr": 36.0887,
+                                "average_ssim": 0.9682
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "red": {
+            "overall": {
+                "number": 902,
+                "weight": 1.0,
+                "scores": {
+                    "input_laion_score": 5.0258,
+                    "output_laion_score": 5.0287,
+                    "fid_score": 3.1677,
+                    "average_lpips": 0.0175,
+                    "average_psnr": 38.7482,
+                    "average_ssim": 0.9794
+                }
+            },
+            "subsets": {
+                "resized_validation_rgba": {
+                    "overall": {
+                        "number": 402,
+                        "weight": 0.5,
+                        "scores": {
+                            "input_laion_score": 5.0723,
+                            "output_laion_score": 5.0768,
+                            "fid_score": 1.763,
+                            "average_lpips": 0.019,
+                            "average_psnr": 38.5216,
+                            "average_ssim": 0.9764
+                        }
+                    },
+                    "subtypes": {
+                        "images": {
+                            "number": 402,
+                            "weight": 0.5,
+                            "scores": {
+                                "input_laion_score": 5.0723,
+                                "output_laion_score": 5.0768,
+                                "fid_score": 1.763,
+                                "average_lpips": 0.019,
+                                "average_psnr": 38.5216,
+                                "average_ssim": 0.9764
+                            }
+                        }
+                    }
+                },
+                "resized_AIM_eval_data": {
+                    "overall": {
+                        "number": 500,
+                        "weight": 0.5,
+                        "scores": {
+                            "input_laion_score": 4.9794,
+                            "output_laion_score": 4.9806,
+                            "fid_score": 4.5723,
+                            "average_lpips": 0.016,
+                            "average_psnr": 38.9748,
+                            "average_ssim": 0.9825
+                        }
+                    },
+                    "subtypes": {
+                        "plant": {
+                            "number": 75,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 5.0462,
+                                "output_laion_score": 5.0593,
+                                "fid_score": 6.0675,
+                                "average_lpips": 0.0197,
+                                "average_psnr": 38.1963,
+                                "average_ssim": 0.9829
+                            }
+                        },
+                        "fruit": {
+                            "number": 10,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 4.8866,
+                                "output_laion_score": 4.9068,
+                                "fid_score": 2.2311,
+                                "average_lpips": 0.0084,
+                                "average_psnr": 40.0412,
+                                "average_ssim": 0.9899
+                            }
+                        },
+                        "portrait": {
+                            "number": 100,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 5.1168,
+                                "output_laion_score": 5.1204,
+                                "fid_score": 2.0691,
+                                "average_lpips": 0.0097,
+                                "average_psnr": 41.5391,
+                                "average_ssim": 0.989
+                            }
+                        },
+                        "toy": {
+                            "number": 36,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 4.7932,
+                                "output_laion_score": 4.7916,
+                                "fid_score": 1.7625,
+                                "average_lpips": 0.0096,
+                                "average_psnr": 40.3571,
+                                "average_ssim": 0.9883
+                            }
+                        },
+                        "furniture": {
+                            "number": 45,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 4.9623,
+                                "output_laion_score": 4.9515,
+                                "fid_score": 2.2705,
+                                "average_lpips": 0.0122,
+                                "average_psnr": 38.519,
+                                "average_ssim": 0.9798
+                            }
+                        },
+                        "animal": {
+                            "number": 200,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 5.1439,
+                                "output_laion_score": 5.1426,
+                                "fid_score": 0.928,
+                                "average_lpips": 0.024,
+                                "average_psnr": 37.228,
+                                "average_ssim": 0.9683
+                            }
+                        },
+                        "transparent": {
+                            "number": 34,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 4.907,
+                                "output_laion_score": 4.8921,
+                                "fid_score": 16.6773,
+                                "average_lpips": 0.0284,
+                                "average_psnr": 36.9426,
+                                "average_ssim": 0.9791
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "green": {
+            "overall": {
+                "number": 902,
+                "weight": 1.0,
+                "scores": {
+                    "input_laion_score": 4.8897,
+                    "output_laion_score": 4.8884,
+                    "fid_score": 2.7525,
+                    "average_lpips": 0.0133,
+                    "average_psnr": 38.7592,
+                    "average_ssim": 0.98
+                }
+            },
+            "subsets": {
+                "resized_validation_rgba": {
+                    "overall": {
+                        "number": 402,
+                        "weight": 0.5,
+                        "scores": {
+                            "input_laion_score": 4.9408,
+                            "output_laion_score": 4.9459,
+                            "fid_score": 1.7207,
+                            "average_lpips": 0.0157,
+                            "average_psnr": 38.459,
+                            "average_ssim": 0.9765
+                        }
+                    },
+                    "subtypes": {
+                        "images": {
+                            "number": 402,
+                            "weight": 0.5,
+                            "scores": {
+                                "input_laion_score": 4.9408,
+                                "output_laion_score": 4.9459,
+                                "fid_score": 1.7207,
+                                "average_lpips": 0.0157,
+                                "average_psnr": 38.459,
+                                "average_ssim": 0.9765
+                            }
+                        }
+                    }
+                },
+                "resized_AIM_eval_data": {
+                    "overall": {
+                        "number": 500,
+                        "weight": 0.5,
+                        "scores": {
+                            "input_laion_score": 4.8386,
+                            "output_laion_score": 4.8308,
+                            "fid_score": 3.7843,
+                            "average_lpips": 0.0109,
+                            "average_psnr": 39.0594,
+                            "average_ssim": 0.9836
+                        }
+                    },
+                    "subtypes": {
+                        "plant": {
+                            "number": 75,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 4.901,
+                                "output_laion_score": 4.8881,
+                                "fid_score": 4.5544,
+                                "average_lpips": 0.01,
+                                "average_psnr": 38.4582,
+                                "average_ssim": 0.9856
+                            }
+                        },
+                        "fruit": {
+                            "number": 10,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 4.7682,
+                                "output_laion_score": 4.7574,
+                                "fid_score": 2.3295,
+                                "average_lpips": 0.0065,
+                                "average_psnr": 40.0294,
+                                "average_ssim": 0.991
+                            }
+                        },
+                        "portrait": {
+                            "number": 100,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 5.0457,
+                                "output_laion_score": 5.0388,
+                                "fid_score": 1.7708,
+                                "average_lpips": 0.0079,
+                                "average_psnr": 41.5073,
+                                "average_ssim": 0.9897
+                            }
+                        },
+                        "toy": {
+                            "number": 36,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 4.6942,
+                                "output_laion_score": 4.6814,
+                                "fid_score": 1.3899,
+                                "average_lpips": 0.0072,
+                                "average_psnr": 40.5129,
+                                "average_ssim": 0.9887
+                            }
+                        },
+                        "furniture": {
+                            "number": 45,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 4.8417,
+                                "output_laion_score": 4.844,
+                                "fid_score": 1.8053,
+                                "average_lpips": 0.0092,
+                                "average_psnr": 38.5006,
+                                "average_ssim": 0.9809
+                            }
+                        },
+                        "animal": {
+                            "number": 200,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 4.9592,
+                                "output_laion_score": 4.9328,
+                                "fid_score": 0.934,
+                                "average_lpips": 0.0214,
+                                "average_psnr": 37.2823,
+                                "average_ssim": 0.9686
+                            }
+                        },
+                        "transparent": {
+                            "number": 34,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 4.66,
+                                "output_laion_score": 4.6732,
+                                "fid_score": 13.7065,
+                                "average_lpips": 0.014,
+                                "average_psnr": 37.1248,
+                                "average_ssim": 0.9809
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "blue": {
+            "overall": {
+                "number": 902,
+                "weight": 1.0,
+                "scores": {
+                    "input_laion_score": 4.885,
+                    "output_laion_score": 4.8903,
+                    "fid_score": 3.0899,
+                    "average_lpips": 0.0159,
+                    "average_psnr": 38.096,
+                    "average_ssim": 0.9777
+                }
+            },
+            "subsets": {
+                "resized_validation_rgba": {
+                    "overall": {
+                        "number": 402,
+                        "weight": 0.5,
+                        "scores": {
+                            "input_laion_score": 4.9354,
+                            "output_laion_score": 4.9385,
+                            "fid_score": 1.6301,
+                            "average_lpips": 0.0179,
+                            "average_psnr": 37.9865,
+                            "average_ssim": 0.9752
+                        }
+                    },
+                    "subtypes": {
+                        "images": {
+                            "number": 402,
+                            "weight": 0.5,
+                            "scores": {
+                                "input_laion_score": 4.9354,
+                                "output_laion_score": 4.9385,
+                                "fid_score": 1.6301,
+                                "average_lpips": 0.0179,
+                                "average_psnr": 37.9865,
+                                "average_ssim": 0.9752
+                            }
+                        }
+                    }
+                },
+                "resized_AIM_eval_data": {
+                    "overall": {
+                        "number": 500,
+                        "weight": 0.5,
+                        "scores": {
+                            "input_laion_score": 4.8345,
+                            "output_laion_score": 4.8421,
+                            "fid_score": 4.5498,
+                            "average_lpips": 0.0139,
+                            "average_psnr": 38.2055,
+                            "average_ssim": 0.9803
+                        }
+                    },
+                    "subtypes": {
+                        "plant": {
+                            "number": 75,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 4.8986,
+                                "output_laion_score": 4.908,
+                                "fid_score": 6.0934,
+                                "average_lpips": 0.0168,
+                                "average_psnr": 37.3554,
+                                "average_ssim": 0.9786
+                            }
+                        },
+                        "fruit": {
+                            "number": 10,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 4.7365,
+                                "output_laion_score": 4.7397,
+                                "fid_score": 1.9402,
+                                "average_lpips": 0.0079,
+                                "average_psnr": 38.6272,
+                                "average_ssim": 0.9888
+                            }
+                        },
+                        "portrait": {
+                            "number": 100,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 4.9555,
+                                "output_laion_score": 4.9665,
+                                "fid_score": 2.1347,
+                                "average_lpips": 0.0092,
+                                "average_psnr": 40.9358,
+                                "average_ssim": 0.9881
+                            }
+                        },
+                        "toy": {
+                            "number": 36,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 4.7282,
+                                "output_laion_score": 4.7322,
+                                "fid_score": 1.881,
+                                "average_lpips": 0.009,
+                                "average_psnr": 39.7831,
+                                "average_ssim": 0.9871
+                            }
+                        },
+                        "furniture": {
+                            "number": 45,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 4.7842,
+                                "output_laion_score": 4.7844,
+                                "fid_score": 2.6742,
+                                "average_lpips": 0.0113,
+                                "average_psnr": 37.6404,
+                                "average_ssim": 0.9789
+                            }
+                        },
+                        "animal": {
+                            "number": 200,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 5.0133,
+                                "output_laion_score": 5.0084,
+                                "fid_score": 0.915,
+                                "average_lpips": 0.0233,
+                                "average_psnr": 36.8767,
+                                "average_ssim": 0.9675
+                            }
+                        },
+                        "transparent": {
+                            "number": 34,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 4.7255,
+                                "output_laion_score": 4.7557,
+                                "fid_score": 16.2104,
+                                "average_lpips": 0.02,
+                                "average_psnr": 36.2198,
+                                "average_ssim": 0.973
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "yellow": {
+            "overall": {
+                "number": 902,
+                "weight": 1.0,
+                "scores": {
+                    "input_laion_score": 4.863,
+                    "output_laion_score": 4.8931,
+                    "fid_score": 4.087,
+                    "average_lpips": 0.0182,
+                    "average_psnr": 38.3123,
+                    "average_ssim": 0.9779
+                }
+            },
+            "subsets": {
+                "resized_validation_rgba": {
+                    "overall": {
+                        "number": 402,
+                        "weight": 0.5,
+                        "scores": {
+                            "input_laion_score": 4.9103,
+                            "output_laion_score": 4.937,
+                            "fid_score": 2.6668,
+                            "average_lpips": 0.0198,
+                            "average_psnr": 38.0132,
+                            "average_ssim": 0.9747
+                        }
+                    },
+                    "subtypes": {
+                        "images": {
+                            "number": 402,
+                            "weight": 0.5,
+                            "scores": {
+                                "input_laion_score": 4.9103,
+                                "output_laion_score": 4.937,
+                                "fid_score": 2.6668,
+                                "average_lpips": 0.0198,
+                                "average_psnr": 38.0132,
+                                "average_ssim": 0.9747
+                            }
+                        }
+                    }
+                },
+                "resized_AIM_eval_data": {
+                    "overall": {
+                        "number": 500,
+                        "weight": 0.5,
+                        "scores": {
+                            "input_laion_score": 4.8157,
+                            "output_laion_score": 4.8491,
+                            "fid_score": 5.5072,
+                            "average_lpips": 0.0165,
+                            "average_psnr": 38.6114,
+                            "average_ssim": 0.9811
+                        }
+                    },
+                    "subtypes": {
+                        "plant": {
+                            "number": 75,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 4.898,
+                                "output_laion_score": 4.9493,
+                                "fid_score": 7.0388,
+                                "average_lpips": 0.0171,
+                                "average_psnr": 37.7966,
+                                "average_ssim": 0.9817
+                            }
+                        },
+                        "fruit": {
+                            "number": 10,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 4.8125,
+                                "output_laion_score": 4.8802,
+                                "fid_score": 2.6019,
+                                "average_lpips": 0.0085,
+                                "average_psnr": 40.0695,
+                                "average_ssim": 0.9899
+                            }
+                        },
+                        "portrait": {
+                            "number": 100,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 4.9107,
+                                "output_laion_score": 4.9381,
+                                "fid_score": 2.8759,
+                                "average_lpips": 0.0095,
+                                "average_psnr": 41.1313,
+                                "average_ssim": 0.9888
+                            }
+                        },
+                        "toy": {
+                            "number": 36,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 4.7209,
+                                "output_laion_score": 4.744,
+                                "fid_score": 2.3471,
+                                "average_lpips": 0.0099,
+                                "average_psnr": 40.1392,
+                                "average_ssim": 0.9871
+                            }
+                        },
+                        "furniture": {
+                            "number": 45,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 4.7706,
+                                "output_laion_score": 4.8107,
+                                "fid_score": 2.7955,
+                                "average_lpips": 0.0124,
+                                "average_psnr": 37.9305,
+                                "average_ssim": 0.9802
+                            }
+                        },
+                        "animal": {
+                            "number": 200,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 4.943,
+                                "output_laion_score": 4.9498,
+                                "fid_score": 1.3234,
+                                "average_lpips": 0.0244,
+                                "average_psnr": 36.9824,
+                                "average_ssim": 0.9672
+                            }
+                        },
+                        "transparent": {
+                            "number": 34,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 4.6544,
+                                "output_laion_score": 4.6719,
+                                "fid_score": 19.568,
+                                "average_lpips": 0.0335,
+                                "average_psnr": 36.2306,
+                                "average_ssim": 0.9727
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "cyan": {
+            "overall": {
+                "number": 902,
+                "weight": 1.0,
+                "scores": {
+                    "input_laion_score": 4.9692,
+                    "output_laion_score": 4.9749,
+                    "fid_score": 3.0366,
+                    "average_lpips": 0.0157,
+                    "average_psnr": 38.4094,
+                    "average_ssim": 0.9794
+                }
+            },
+            "subsets": {
+                "resized_validation_rgba": {
+                    "overall": {
+                        "number": 402,
+                        "weight": 0.5,
+                        "scores": {
+                            "input_laion_score": 5.0222,
+                            "output_laion_score": 5.0337,
+                            "fid_score": 2.0343,
+                            "average_lpips": 0.0177,
+                            "average_psnr": 38.183,
+                            "average_ssim": 0.9759
+                        }
+                    },
+                    "subtypes": {
+                        "images": {
+                            "number": 402,
+                            "weight": 0.5,
+                            "scores": {
+                                "input_laion_score": 5.0222,
+                                "output_laion_score": 5.0337,
+                                "fid_score": 2.0343,
+                                "average_lpips": 0.0177,
+                                "average_psnr": 38.183,
+                                "average_ssim": 0.9759
+                            }
+                        }
+                    }
+                },
+                "resized_AIM_eval_data": {
+                    "overall": {
+                        "number": 500,
+                        "weight": 0.5,
+                        "scores": {
+                            "input_laion_score": 4.9162,
+                            "output_laion_score": 4.9161,
+                            "fid_score": 4.0388,
+                            "average_lpips": 0.0137,
+                            "average_psnr": 38.6358,
+                            "average_ssim": 0.9829
+                        }
+                    },
+                    "subtypes": {
+                        "plant": {
+                            "number": 75,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 4.9847,
+                                "output_laion_score": 5.0031,
+                                "fid_score": 4.38,
+                                "average_lpips": 0.0133,
+                                "average_psnr": 37.9177,
+                                "average_ssim": 0.9847
+                            }
+                        },
+                        "fruit": {
+                            "number": 10,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 4.8635,
+                                "output_laion_score": 4.8702,
+                                "fid_score": 2.1496,
+                                "average_lpips": 0.0073,
+                                "average_psnr": 39.2574,
+                                "average_ssim": 0.9906
+                            }
+                        },
+                        "portrait": {
+                            "number": 100,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 5.0268,
+                                "output_laion_score": 5.0433,
+                                "fid_score": 2.0107,
+                                "average_lpips": 0.0085,
+                                "average_psnr": 41.241,
+                                "average_ssim": 0.9894
+                            }
+                        },
+                        "toy": {
+                            "number": 36,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 4.8373,
+                                "output_laion_score": 4.8148,
+                                "fid_score": 2.0928,
+                                "average_lpips": 0.0081,
+                                "average_psnr": 40.3112,
+                                "average_ssim": 0.9881
+                            }
+                        },
+                        "furniture": {
+                            "number": 45,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 4.8498,
+                                "output_laion_score": 4.8872,
+                                "fid_score": 2.067,
+                                "average_lpips": 0.0104,
+                                "average_psnr": 38.1194,
+                                "average_ssim": 0.9807
+                            }
+                        },
+                        "animal": {
+                            "number": 200,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 5.0461,
+                                "output_laion_score": 5.0308,
+                                "fid_score": 1.0366,
+                                "average_lpips": 0.0227,
+                                "average_psnr": 37.1122,
+                                "average_ssim": 0.968
+                            }
+                        },
+                        "transparent": {
+                            "number": 34,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 4.8052,
+                                "output_laion_score": 4.7635,
+                                "fid_score": 14.5347,
+                                "average_lpips": 0.0254,
+                                "average_psnr": 36.4914,
+                                "average_ssim": 0.9789
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "magenta": {
+            "overall": {
+                "number": 902,
+                "weight": 1.0,
+                "scores": {
+                    "input_laion_score": 4.8162,
+                    "output_laion_score": 4.8122,
+                    "fid_score": 2.7946,
+                    "average_lpips": 0.0142,
+                    "average_psnr": 38.3453,
+                    "average_ssim": 0.9802
+                }
+            },
+            "subsets": {
+                "resized_validation_rgba": {
+                    "overall": {
+                        "number": 402,
+                        "weight": 0.5,
+                        "scores": {
+                            "input_laion_score": 4.8724,
+                            "output_laion_score": 4.8749,
+                            "fid_score": 1.6561,
+                            "average_lpips": 0.0162,
+                            "average_psnr": 38.2093,
+                            "average_ssim": 0.9768
+                        }
+                    },
+                    "subtypes": {
+                        "images": {
+                            "number": 402,
+                            "weight": 0.5,
+                            "scores": {
+                                "input_laion_score": 4.8724,
+                                "output_laion_score": 4.8749,
+                                "fid_score": 1.6561,
+                                "average_lpips": 0.0162,
+                                "average_psnr": 38.2093,
+                                "average_ssim": 0.9768
+                            }
+                        }
+                    }
+                },
+                "resized_AIM_eval_data": {
+                    "overall": {
+                        "number": 500,
+                        "weight": 0.5,
+                        "scores": {
+                            "input_laion_score": 4.7601,
+                            "output_laion_score": 4.7495,
+                            "fid_score": 3.9331,
+                            "average_lpips": 0.0122,
+                            "average_psnr": 38.4813,
+                            "average_ssim": 0.9835
+                        }
+                    },
+                    "subtypes": {
+                        "plant": {
+                            "number": 75,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 4.893,
+                                "output_laion_score": 4.8792,
+                                "fid_score": 4.1515,
+                                "average_lpips": 0.0134,
+                                "average_psnr": 37.6062,
+                                "average_ssim": 0.9849
+                            }
+                        },
+                        "fruit": {
+                            "number": 10,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 4.6666,
+                                "output_laion_score": 4.6686,
+                                "fid_score": 2.3092,
+                                "average_lpips": 0.0069,
+                                "average_psnr": 39.2694,
+                                "average_ssim": 0.9906
+                            }
+                        },
+                        "portrait": {
+                            "number": 100,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 4.9483,
+                                "output_laion_score": 4.9505,
+                                "fid_score": 1.7466,
+                                "average_lpips": 0.0083,
+                                "average_psnr": 41.1363,
+                                "average_ssim": 0.9895
+                            }
+                        },
+                        "toy": {
+                            "number": 36,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 4.664,
+                                "output_laion_score": 4.6526,
+                                "fid_score": 1.3806,
+                                "average_lpips": 0.0077,
+                                "average_psnr": 40.0413,
+                                "average_ssim": 0.9888
+                            }
+                        },
+                        "furniture": {
+                            "number": 45,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 4.741,
+                                "output_laion_score": 4.7395,
+                                "fid_score": 1.8995,
+                                "average_lpips": 0.0097,
+                                "average_psnr": 38.0651,
+                                "average_ssim": 0.9805
+                            }
+                        },
+                        "animal": {
+                            "number": 200,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 4.8832,
+                                "output_laion_score": 4.8588,
+                                "fid_score": 0.9278,
+                                "average_lpips": 0.0218,
+                                "average_psnr": 37.0465,
+                                "average_ssim": 0.9688
+                            }
+                        },
+                        "transparent": {
+                            "number": 34,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 4.5246,
+                                "output_laion_score": 4.4975,
+                                "fid_score": 15.1165,
+                                "average_lpips": 0.0173,
+                                "average_psnr": 36.2041,
+                                "average_ssim": 0.9812
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "rgba": {
+            "overall": {
+                "number": 902,
+                "weight": 1.0,
+                "scores": {
+                    "input_laion_score": 5.1936,
+                    "output_laion_score": 5.2467,
+                    "fid_score": 3.8011,
+                    "average_lpips": 0.0292,
+                    "average_psnr": 31.3588,
+                    "average_ssim": 0.9504
+                }
+            },
+            "subsets": {
+                "resized_AIM_eval_data": {
+                    "overall": {
+                        "number": 500,
+                        "weight": 0.5,
+                        "scores": {
+                            "input_laion_score": 5.1435,
+                            "output_laion_score": 5.2325,
+                            "fid_score": 4.5083,
+                            "average_lpips": 0.0283,
+                            "average_psnr": 31.3163,
+                            "average_ssim": 0.9474
+                        }
+                    },
+                    "subtypes": {
+                        "plant": {
+                            "number": 75,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 5.1817,
+                                "output_laion_score": 5.2991,
+                                "fid_score": 5.61,
+                                "average_lpips": 0.027,
+                                "average_psnr": 31.0364,
+                                "average_ssim": 0.9498
+                            }
+                        },
+                        "fruit": {
+                            "number": 10,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 5.1031,
+                                "output_laion_score": 5.2951,
+                                "fid_score": 2.4056,
+                                "average_lpips": 0.0158,
+                                "average_psnr": 32.6029,
+                                "average_ssim": 0.9744
+                            }
+                        },
+                        "portrait": {
+                            "number": 100,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 5.0626,
+                                "output_laion_score": 5.08,
+                                "fid_score": 3.9365,
+                                "average_lpips": 0.0178,
+                                "average_psnr": 31.9914,
+                                "average_ssim": 0.977
+                            }
+                        },
+                        "toy": {
+                            "number": 36,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 4.9938,
+                                "output_laion_score": 5.0641,
+                                "fid_score": 2.4329,
+                                "average_lpips": 0.0201,
+                                "average_psnr": 31.2711,
+                                "average_ssim": 0.9708
+                            }
+                        },
+                        "furniture": {
+                            "number": 45,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 5.1546,
+                                "output_laion_score": 5.2164,
+                                "fid_score": 4.157,
+                                "average_lpips": 0.023,
+                                "average_psnr": 31.4312,
+                                "average_ssim": 0.9489
+                            }
+                        },
+                        "animal": {
+                            "number": 200,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 5.3591,
+                                "output_laion_score": 5.5027,
+                                "fid_score": 1.6612,
+                                "average_lpips": 0.0336,
+                                "average_psnr": 31.4683,
+                                "average_ssim": 0.9542
+                            }
+                        },
+                        "transparent": {
+                            "number": 34,
+                            "weight": 0.071429,
+                            "scores": {
+                                "input_laion_score": 5.1495,
+                                "output_laion_score": 5.1703,
+                                "fid_score": 11.3549,
+                                "average_lpips": 0.0606,
+                                "average_psnr": 29.4127,
+                                "average_ssim": 0.8565
+                            }
+                        }
+                    }
+                },
+                "resized_validation_rgba": {
+                    "overall": {
+                        "number": 402,
+                        "weight": 0.5,
+                        "scores": {
+                            "input_laion_score": 5.2438,
+                            "output_laion_score": 5.2609,
+                            "fid_score": 3.0938,
+                            "average_lpips": 0.03,
+                            "average_psnr": 31.4013,
+                            "average_ssim": 0.9534
+                        }
+                    },
+                    "subtypes": {
+                        "images": {
+                            "number": 402,
+                            "weight": 0.5,
+                            "scores": {
+                                "input_laion_score": 5.2438,
+                                "output_laion_score": 5.2609,
+                                "fid_score": 3.0938,
+                                "average_lpips": 0.03,
+                                "average_psnr": 31.4013,
+                                "average_ssim": 0.9534
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
